@@ -1168,7 +1168,8 @@ public class Micropolis
 								qtem[y/2][x/2] += 15;
 								continue;
 							}
-							plevel += getPollutionValue(tile);
+							int val = getPollutionValue(tile);
+							plevel += val;
 							if (isConstructed(tile))
 								lvflag++;
 						}

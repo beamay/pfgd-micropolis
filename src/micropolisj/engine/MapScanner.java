@@ -38,6 +38,7 @@ class MapScanner extends TileBehavior
 		NUCLEAR,
 		FIRESTATION,
 		POLICESTATION,
+		KELP,
 		STADIUM_EMPTY,
 		STADIUM_FULL,
 		AIRPORT,
@@ -72,6 +73,9 @@ class MapScanner extends TileBehavior
 		case POLICESTATION:
 			doPoliceStation();
 			return;
+		case KELP:
+				doKelp();
+				return;
 		case STADIUM_EMPTY:
 			doStadiumEmpty();
 			return;
@@ -226,6 +230,15 @@ class MapScanner extends TileBehavior
 		}
 
 		city.fireStMap[ypos/8][xpos/8] += z;
+	}
+
+	void doKelp()
+	{
+		boolean powerOn = checkZonePower();
+		if ((city.cityTime % 8) == 0) {
+			repairZone(KELP, 3);
+		}
+
 	}
 
 	void doPoliceStation()

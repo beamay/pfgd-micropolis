@@ -23,6 +23,7 @@ public enum MicropolisTool
 	INDUSTRIAL(3, 100),
 	FIRE(3, 500),
 	POLICE(3, 500),
+	KELP(3, 50),
 	STADIUM(4, 5000),
 	PARK(1, 10),
 	SEAPORT(4, 3000),
