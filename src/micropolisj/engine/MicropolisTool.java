@@ -70,6 +70,8 @@ public enum MicropolisTool
 		case NUCLEAR:
 		case AIRPORT:
 			return new BuildingTool(engine, this, xpos, ypos);
+		case KELP:
+			return new BuildingTool(engine, this, xpos, ypos);
 
 		default:
 			return new ToolStroke(engine, this, xpos, ypos);

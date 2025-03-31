@@ -32,7 +32,7 @@ class BuildingTool extends ToolStroke
 		switch (tool)
 		{
 		case FIRE:
-			return applyZone(eff, FIRESTATION);
+			return applyZone(eff, KELP);
 
 		case POLICE:
 			return applyZone(eff, POLICESTATION);

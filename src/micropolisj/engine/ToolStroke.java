@@ -77,6 +77,9 @@ public class ToolStroke
 		case INDUSTRIAL:
 			return applyZone(eff, INDCLR);
 
+			case KELP:
+				return applyZone(eff, INDCLR);
+
 		default:
 			// not expected
 			throw new Error("unexpected tool: "+tool);
@@ -141,8 +144,12 @@ public class ToolStroke
 			{
 				int tileValue = eff.getTile(columnNum, rowNum);
 				tileValue = tileValue & LOMASK;
-
-				if (tileValue != DIRT) {
+				//logic for kelp on water here//
+				if(base==KELP){
+					if (tileValue != RIVER && tileValue != REDGE && tileValue != CHANNEL && tileValue != RIVEDGE) {
+						canBuild = false;
+					}
+				} else if (tileValue != DIRT) {
 					if (city.autoBulldoze && canAutoBulldozeZ((char)tileValue)) {
 						cost++;
 					}

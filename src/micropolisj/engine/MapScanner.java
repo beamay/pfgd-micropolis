@@ -234,7 +234,7 @@ class MapScanner extends TileBehavior
 
 	void doKelp()
 	{
-		boolean powerOn = checkZonePower();
+		boolean powerOn = true;
 		if ((city.cityTime % 8) == 0) {
 			repairZone(KELP, 3);
 		}
