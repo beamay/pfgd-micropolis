@@ -1010,12 +1010,12 @@
 958   misc_animation@0,2096
 959   misc_animation@0,2112
 # BEGIN KELP (4 frames) #
-960   kelp@0,0             (overwater)(pollution=-30)
-961   kelp@16,0            (overwater)(pollution=-30)
-962   kelp@32,0            (overwater)(pollution=-30)
-963   kelp@0,16            (overwater)(pollution=-30)
-964   kelp@16,16     (zone)(overwater)(building=3x3)(behavior=KELP)(description=#17)(pollution=-30)
-965   kelp@32,16           (overwater)(pollution=-30)
-966   kelp@0,32            (overwater)(pollution=-30)
-967   kelp@16,32           (overwater)(pollution=-30)
-968   kelp@32,32           (overwater)(pollution=-30)
+960   kelp@0,0             (overwater)(pollution=-300)
+961   kelp@16,0            (overwater)(pollution=-300)
+962   kelp@32,0            (overwater)(pollution=-300)
+963   kelp@0,16            (overwater)(pollution=-300)
+964   kelp@16,16     (zone)(overwater)(building=3x3)(behavior=KELP)(description=#17)(pollution=-300)
+965   kelp@32,16           (overwater)(pollution=-300)
+966   kelp@0,32            (overwater)(pollution=-300)
+967   kelp@16,32           (overwater)(pollution=-300)
+968   kelp@32,32           (overwater)(pollution=-300)

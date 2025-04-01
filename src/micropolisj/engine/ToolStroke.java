@@ -165,7 +165,9 @@ public class ToolStroke
 		}
 
 		eff.spend(cost);
-
+		if (base==KELP){
+			city.numKelp += 1;
+		}
 		int i = 0;
 		for (int rowNum = 0; rowNum < bi.height; rowNum++)
 		{

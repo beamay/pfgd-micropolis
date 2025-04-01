@@ -152,6 +152,7 @@ public class Micropolis
 
 	int crimeAverage;
 	int pollutionAverage;
+	int numKelp=1;
 	int landValueAverage;
 	int trafficAverage;
 
@@ -1177,7 +1178,7 @@ public class Micropolis
 				}
 
 				if (plevel < 0)
-					plevel = 250; //?
+					plevel = 0; //?
 
 				if (plevel > 255)
 					plevel = 255;
@@ -1223,7 +1224,7 @@ public class Micropolis
 		{
 			for (int y = 0; y < HWLDY; y++)
 			{
-				int z = tem[y][x];
+				int z = tem[y][x] /numKelp;
 				pollutionMem[y][x] = z;
 
 				if (z != 0)
