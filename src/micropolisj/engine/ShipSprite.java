@@ -23,7 +23,7 @@ public class ShipSprite extends Sprite
 	static int [] BPx = {  0,  0,  2,  2,  2,  0, -2, -2, -2 };
 	static int [] BPy = {  0, -2, -2,  0,  2,  2,  2,  0, -2 };
 	static int [] BtClrTab = { RIVER, CHANNEL, POWERBASE, POWERBASE+1,
-			RAILBASE, RAILBASE+1, BRWH, BRWV };
+			RAILBASE, RAILBASE+1, BRWH, BRWV, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969 };
 
 	int newDir;
 	int count;
